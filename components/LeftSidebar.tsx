@@ -8,10 +8,11 @@ import { FcComboChart } from "react-icons/fc";
 import { FcConferenceCall } from "react-icons/fc";
 import { FcDatabase } from "react-icons/fc";
 import { FcDonate } from "react-icons/fc";
+import ProfileSidebarTile from './ProfileSidebarTile';
 
 function Sidebar() {
     return (
-        <div className='justify-center items-center align-middle flex py-4 px-2'>
+        <div className='flex py-4 px-2'>
             <div className=' bg-black h-full rounded-lg'>
                 <div className='w-60 justify-center items-center align-middle'>
                     {/* <img alt='logo' src="/title_and_city.png" className=' rounded-lg w-60 m-2' /> */}

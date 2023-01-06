@@ -3,7 +3,7 @@ import Searchbar from './Searchbar'
 
 function Rightbar() {
     return (
-        <div>
+        <div className='flex flex-col w-1/4'>
             <Searchbar />
         </div>
     )
