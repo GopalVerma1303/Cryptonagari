@@ -18,7 +18,7 @@ const DataPost = [
         comments: "101"
     },
     {
-        img: "https://c4.wallpaperflare.com/wallpaper/765/999/824/portrait-display-vertical-artwork-digital-art-warrior-hd-wallpaper-preview.jpg",
+        img: "",
         author: "Gopal Verma",
         title: "Welcome to Cryptonagari",
         content: "It is the Cryptonagari. World where privacy feels like home.",

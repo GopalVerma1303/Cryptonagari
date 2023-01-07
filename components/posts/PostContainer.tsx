@@ -35,9 +35,13 @@ function PostContainer({ img, author, title, content, time, like, comments }: Pr
                         </div>
 
                     </div>
-                    <div className=' justify-center align-middle items-center w-full p-5 rounded-lg flex-row'>
-                        <img alt='logo' src={`${img}`} className='flex rounded-lg w-auto h-auto hover:cursor-pointer' />
-                    </div>
+                    {
+                        ((img != "" )) && (
+                            <div className=' justify-center align-middle items-center w-full p-5 rounded-lg flex-row'>
+                                <img alt='logo' src={`${img}`} className='flex rounded-lg w-auto h-auto hover:cursor-pointer' />
+                            </div>
+                        )
+                    }
                     <div className='p-5'>
                         <p className='text-white text-xl font-extrabold'>{title}</p>
                         <p className='text-white text-sm font-light'>{content}</p>

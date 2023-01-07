@@ -1,14 +1,14 @@
 import React from 'react'
-import MainNavbar from './MainNavbar'
-import PostContainer from './posts/PostContainer'
-import PostListContainer from './posts/PostListContainer'
+import MainNavbar from '../Navbar'
+import PostContainer from './PostContainer'
+import PostListContainer from './PostListContainer'
 
 
 function Mainbar() {
     return (
         <div className='flex flex-1 h-screen w-3/5 flex-col'>
             <div>
-                <MainNavbar />
+                <MainNavbar title="Posts" />
             </div>
             <PostListContainer />
         </div>
