@@ -11,7 +11,7 @@ function Searchbar() {
                 
                     className="flex-1 bg-transparent outline-none text-white"
                 />
-                <FcSearch size={24} />
+                <FcSearch className='hover:cursor-pointer' size={30} />
             </div>
         </div>
     )
