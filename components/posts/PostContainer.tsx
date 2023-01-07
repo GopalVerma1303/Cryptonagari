@@ -19,33 +19,33 @@ interface Props {
 
 function PostContainer({ img, author, title, content, time, like, comments }: Props) {
     return (
-        <div className='flex py-2 px-2 w-full hover:cursor-pointer'>
+        <div className='flex py-2 px-2 w-full'>
             <div className=' bg-black h-full rounded-lg w-full'>
-                <div className='w-full hover:cursor-pointer items-center'>
+                <div className='w-full items-center'>
                     <div className='flex p-5 justify-between items-center'>
                         <div className=' justify-center flex space-x-2 align-middle items-center m--2'>
-                            <img alt='logo' src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" className='flex w-10 h-10 rounded-lg' />
+                            <img alt='logo' src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" className='flex w-10 h-10 rounded-lg ' />
                             <div>
                                 <p className='text-white'>{author}</p>
-                                <p className='text-white text-xs'>{time}</p>
+                                <p className='text-white  text-xs font-light'>{time}</p>
                             </div>
                         </div>
                         <div>
-                            <HiEllipsisHorizontal className='text-white' size={24}/>
+                            <HiEllipsisHorizontal className='text-[#7d7d7d] ' size={24} />
                         </div>
 
                     </div>
                     <div className=' justify-center align-middle items-center w-full p-5 rounded-lg flex-row'>
-                        <img alt='logo' src={`${img}`} className='flex rounded-lg' />
+                        <img alt='logo' src={`${img}`} className='flex rounded-lg hover:cursor-pointer' />
                     </div>
                     <div className='p-5'>
                         <p className='text-white text-xl font-extrabold'>{title}</p>
-                        <p className='text-white text-sm'>{content}</p>
+                        <p className='text-white text-sm font-light'>{content}</p>
                     </div>
                     <div className='flex justify-start space-x-5 p-5'>
-                        <p className='text-white flex'><HiOutlineHeart size={24} /> {like}</p>
-                        <p className='text-white flex'><HiOutlineChatBubbleOvalLeft size={24} /> {comments}</p>
-                        <p className='text-white flex'><HiOutlineShare size={24} /> {comments}</p>
+                        <p className='text-[#7d7d7d]  flex hover:text-red-500 hover:cursor-pointer transition-all duration-200'><HiOutlineHeart size={24} /> {like}</p>
+                        <p className='text-[#7d7d7d]  flex hover:text-blue-500 hover:cursor-pointer transition-all duration-200'><HiOutlineChatBubbleOvalLeft size={24} /> {comments}</p>
+                        <p className='text-[#7d7d7d]  flex hover:text-green-500 hover:cursor-pointer transition-all duration-200'><HiOutlineShare size={24} /> {comments}</p>
                     </div>
                 </div>
             </div>
