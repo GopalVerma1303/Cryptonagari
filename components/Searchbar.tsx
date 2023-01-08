@@ -1,19 +1,19 @@
 import React from 'react'
-import { FcSearch } from "react-icons/fc";
+import { FcBinoculars } from "react-icons/fc";
+import { BsSearch } from "react-icons/bs";
 interface Props {
     placeholderText: String
 }
-function Searchbar({placeholderText} : Props) {
+function Searchbar({ placeholderText }: Props) {
     return (
-        <div className='w-full justify-center align-middle items-center py-2 pr-2'>
-            <div className=' bg-black rounded-lg w-full justify-between items-center flex flex-row py-4 px-4 space-x-2'>
+        <div className='w-full justify-center align-middle items-center py-2 pr-2 '>
+            <div className=' bg-black rounded-lg w-full justify-center items-center flex flex-row py-4 px-4 space-x-2'>
                 <input
                     type="text"
-                    placeholder={`${placeholderText}`}
-
+                    placeholder="Search"
                     className="flex-1 bg-transparent outline-none text-white"
                 />
-                <FcSearch className='hover:cursor-pointer' size={30} />
+                <BsSearch className='text-slate-400 hover:cursor-pointer' size={20}  />
             </div>
         </div>
     )

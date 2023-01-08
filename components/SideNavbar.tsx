@@ -9,7 +9,7 @@ import { FcConferenceCall } from "react-icons/fc";
 import { FcDatabase } from "react-icons/fc";
 import { FcDonate } from "react-icons/fc";
 import { FcSettings } from "react-icons/fc";
-import { FcBusinessContact } from "react-icons/fc";
+import { FcHome } from "react-icons/fc";
 import ProfileSidebarTile from './ProfileSidebarTile';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
@@ -25,12 +25,18 @@ function Sidebar() {
         <div className='py-2 pl-2'>
             <div className=' bg-black h-full rounded-lg space-y-5 lg:space-y-0'>
                 <div onClick={() => setPage("Home")} className='w-fit justify-center items-center align-middle hover:cursor-pointer pt-2 lg:pt-0'>
-                    <Link href={"/Home"}>
+                    <Link href={'/Home'}>
                         <img src='/logo.jpg' className='w-12 rounded-full p-2 ml-4 lg:hidden' />
-                        <img alt='logo' src="/title_in_extra_black.png" className=' self-center rounded-lg w-56 m-2 hidden lg:inline-flex' />
+                        <img alt='logo' src="/title_in_extra_black.png" className=' self-center rounded-lg w-56 my-2 hidden lg:inline-flex' />
                     </Link>
                 </div>
                 <div className=' space-y-2 lg:p-2'>
+
+                    <div onClick={() => setPage("Home")}>
+                        <Link href={"/Home"}>
+                            <SidebarTile title="Home" Icon={FcHome} page={page} />
+                        </Link>
+                    </div>
 
                     <div onClick={() => setPage("Posts")}>
                         <Link href={"/Posts"}>
@@ -72,7 +78,7 @@ function Sidebar() {
                     </div>
                     <div onClick={() => setPage("Profile")}>
                         <Link href={"/Profile"}>
-                            <SidebarTile title="Profile" Icon={FcBusinessContact} page={page} />
+                            <ProfileSidebarTile title={"Profile"} imgSrc={"https://cdn-icons-png.flaticon.com/512/3135/3135715.png"} page={page} />
                         </Link>
                     </div>
                     <div onClick={() => setPage("Settings")}>

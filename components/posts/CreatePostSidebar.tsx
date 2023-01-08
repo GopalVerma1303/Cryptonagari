@@ -16,7 +16,7 @@ function CreatePostSidebar() {
                 </div>
                 <div className="flex items-center justify-between w-full">
                     <p className='text-[#7d7d7d]'>Image</p>
-                    <p className='text-[#2080ff] font-thin hover:cursor-pointer'>Choose image to upload</p>
+                    <p className='text-[#2080ff]  hover:cursor-pointer'>Choose image to upload</p>
                 </div>
                 <div className="flex items-center justify-between w-full">
                     <p className='text-[#7d7d7d]'>Title</p>
