@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Image from 'next/image'
 import SidebarTile from './SidebarTile'
 import { FcCurrencyExchange } from "react-icons/fc";
@@ -12,15 +12,23 @@ import { FcSettings } from "react-icons/fc";
 import { FcBusinessContact } from "react-icons/fc";
 import ProfileSidebarTile from './ProfileSidebarTile';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 function Sidebar() {
     const [page, setPage] = useState("Posts")
+    const router = useRouter()
+    useEffect(() => {
+        setPage(router.pathname.slice(1))
+    }, [])
+
     return (
         <div className='py-2 pl-2'>
             <div className=' bg-black h-full rounded-lg space-y-5 lg:space-y-0'>
                 <div className='w-fit justify-center items-center align-middle hover:cursor-pointer pt-2 lg:pt-0'>
-                    <img src='/logo.jpg' className='w-12 rounded-full p-2 ml-4 lg:hidden' />
-                    <img alt='logo' src="/title_in_extra_black.png" className=' self-center rounded-lg w-56 m-2 hidden lg:inline-flex' />
+                    <Link href={"/"}>
+                        <img src='/logo.jpg' className='w-12 rounded-full p-2 ml-4 lg:hidden' />
+                        <img alt='logo' src="/title_in_extra_black.png" className=' self-center rounded-lg w-56 m-2 hidden lg:inline-flex' />
+                    </Link>
                 </div>
                 <div className=' space-y-2 lg:p-2'>
 
