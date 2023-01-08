@@ -19,6 +19,9 @@ function Sidebar() {
     const router = useRouter()
     useEffect(() => {
         setPage(router.pathname.slice(1))
+        if (router.pathname.slice() == '/') {
+            router.push('/Home')
+        }
     }, [])
 
     return (

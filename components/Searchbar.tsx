@@ -13,7 +13,7 @@ function Searchbar({ placeholderText }: Props) {
                     placeholder="Search"
                     className="flex-1 bg-transparent outline-none text-white"
                 />
-                <BsSearch className='text-slate-400 hover:cursor-pointer' size={20}  />
+                <BsSearch className='text-[#999999]  hover:cursor-pointer m-1' size={20} />
             </div>
         </div>
     )

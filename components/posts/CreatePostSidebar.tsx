@@ -12,7 +12,7 @@ function CreatePostSidebar() {
                 </div>
                 <div className="flex items-center justify-between w-full">
                     <p className='text-[#7d7d7d]'>Author</p>
-                    <ProfileSidebarTile title={"Gopal Verma"} imgSrc="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" />
+                    <ProfileSidebarTile title={"0xa...bc4"} imgSrc="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" page={""} />
                 </div>
                 <div className="flex items-center justify-between w-full">
                     <p className='text-[#7d7d7d]'>Image</p>
