@@ -21,6 +21,7 @@ function Sidebar() {
         setPage(router.pathname.slice(1))
         if (router.pathname.slice() == '/') {
             router.push('/Home')
+            setPage('Home')
         }
     }, [])
 
