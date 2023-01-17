@@ -1,10 +1,10 @@
 import React from 'react'
 import Searchbar from '../Searchbar'
-import CreatePostSidebar from './CreatePostSidebar'
+import CreateCampaignSidebar from './CreateCampaignSidebar'
 function Rightbar() {
     return (
         <div className=' flex-col w-1/4 lg:inline-flex hidden'>
-            <CreatePostSidebar />
+            <CreateCampaignSidebar />
         </div>
     )
 }

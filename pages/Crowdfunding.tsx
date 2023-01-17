@@ -1,8 +1,13 @@
 import React from 'react'
+import Mainbar from '../components/crowdfunding/Mainbar'
+import Rightbar from '../components/crowdfunding/Rightbar'
 
 function Crowdfunding() {
   return (
-    <div>Crowdfunding</div>
+    <>
+      <Mainbar />
+      <Rightbar />
+    </>
   )
 }
 
