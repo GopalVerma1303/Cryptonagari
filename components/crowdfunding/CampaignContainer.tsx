@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react'
 import { BsFillPersonFill } from "react-icons/bs";
 import { RiMoneyDollarCircleFill } from "react-icons/ri";
@@ -7,7 +8,14 @@ import { RiPriceTag3Fill } from "react-icons/ri";
 function CampaignContainer(props: any) {
     return (
         <div className=' bg-[#000000] rounded-lg flex-wrap w-96 m-3 h-fit text-white hover:cursor-pointer'>
-            <img src={props.imageUrl} className=' w-fit rounded-lg flex' />
+            {/* <img src={props.imageUrl} className=' w-fit rounded-lg flex' /> */}
+            <div className='w-full h-52 relative'>
+                <Image alt='image'
+                    className='rounded-lg'
+                    src={props.imageUrl}
+                    layout='fill'
+                    objectFit='fill' />
+            </div>
             <div className=' p-5 text-[#7d7d7d] space-y-2'>
                 <div className='flex justify-between text-white'>
                     <p className=' text-xl font-bold py-5'>{props.title}</p>
