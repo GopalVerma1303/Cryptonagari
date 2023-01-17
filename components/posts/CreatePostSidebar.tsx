@@ -4,6 +4,7 @@ import ProfileSidebarTile from '../ProfileSidebarTile';
 import { IoPaperPlane } from "react-icons/io5";
 
 function CreatePostSidebar() {
+    
     return (
         <div className='flex  h-full pr-2 py-2'>
             <div className=' bg-black h-full rounded-lg w-full p-5 flex-col space-y-9 '>
